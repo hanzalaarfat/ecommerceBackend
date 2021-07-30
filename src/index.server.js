@@ -32,6 +32,9 @@ mongoose
   .then(() => {
     console.log("Database connected");
   });
+app.get("/", (req, res) => {
+  res.send("Ecommerce Backend Api");
+});
 
 app.use(cors());
 app.use(express.json());
